@@ -1,0 +1,5 @@
+strategy,samples,json_valid_rate,accuracy
+baseline,200,0.0,0.0
+cot,200,0.0,0.0
+rubric,200,0.0,0.0
+selfcheck,200,0.0,0.0

@@ -1,0 +1,3 @@
+model,accuracy,best
+word_tfidf_lr,0.35,False
+char_tfidf_lr,0.375,True

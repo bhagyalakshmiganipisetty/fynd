@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Feedback</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 1.5rem; background: #f8fafc; color: #0f172a; }
+    h1 { margin-bottom: 0.25rem; }
+    form { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); margin-bottom: 1rem; }
+    label { display: block; margin: 0.5rem 0 0.25rem; font-weight: 600; }
+    input[type="number"], textarea { width: 100%; padding: 0.5rem; border-radius: 6px; border: 1px solid #cbd5e1; }
+    textarea { min-height: 100px; }
+    button { margin-top: 0.75rem; padding: 0.75rem 1.5rem; background: #2563eb; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }
+    button:hover { background: #1d4ed8; }
+    .card { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); margin-bottom: 1rem; }
+    .muted { color: #64748b; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <h1>User Dashboard</h1>
+  <p class="muted">Share your rating and review; AI will respond instantly.</p>
+
+  <form method="post" action="/submit">
+    <label for="rating">Star rating (1-5)</label>
+    <input id="rating" name="rating" type="number" min="1" max="5" required />
+
+    <label for="review">Review</label>
+    <textarea id="review" name="review" placeholder="Write a short review..." required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  {% if message %}
+  <div class="card">
+    <h3>AI Response</h3>
+    <p>{{ message }}</p>
+    {% if last_rating %}<p class="muted">Your rating: {{ last_rating }}</p>{% endif %}
+  </div>
+  {% endif %}
+</body>
+</html>

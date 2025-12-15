@@ -1,0 +1,169 @@
+model,review,ground_truth,pred
+char_tfidf_lr,"I am a very loyal customer to pure sushi and have been for over 2 years now. Up until about 6 months ago I would have given this place 4, possibly 5 stars, but with the horrible service I have encountered the last 6 months I'm only giving it 2. Normally I order my food to go at the bar and just take it home and eat it. But the for the last 6 months when I go in to order my food at the bar, its always the same bar tender working and she is rude. The last 3 times I have been into order food I ended up just walking out and not ordering anything. She is always taking to what seems to be her friends at the bar. I always know what I want right when I go in, so there is no need for a menu, she greets me and hands me a menu totally ignoring me telling her that I already knew what I wanted. Then she precedes to talk to her ""friend"" or whoever at the bar for 15 minutes before taking my order. I know all of her personal business and even what she plans on wearing to her friends wedding in a few weeks. The food is good, but considering there are so many other really great sushi places with so much better customer services i would not recommend this place at all. Now I totally understand if this happens once in a while, but it has happened every time I have gone in there for the past 6 months. I feel almost as if I were betrayed, I was such a loyal customer and referred so many people to Pure, I just hope they don't receive the same kind of service I do.",2,4
+char_tfidf_lr,"This hotel is in a good location for getting to the sports venues downtown, the convention center or to just be in the heart of the city. Granted, it is about a 7 block walk to most of those places, but the lower price and FREE parking definitely make it worthwhile. I usually stay in Scottsdale when i am here for spring training, but I was here for a conference and walked to the convention center each day with no problems. It made sense to be downtown instead of Scottsdale. The hotel is clean, the rooms are nice and big and the free breakfast is decent. I did not visit the pool, so I cannot comment on it. Someone mentioned the area being shady, i walked to and from here at least twice a day including late night and never felt it was a bad area. Also, the review about passing cars was not an issue for me. I was on the street side and I'm a light sleeper. Maybe their window was open?  i do agree that you can hear your neighbors in the bathroom, slightly annoying. In, summary - this hotel is a great choice and if the need arises, I'd stay again.",4,4
+char_tfidf_lr,This is my neighborhood grocery store. It's at the two locations I shop at most. It's always clean and well stocked and I never have to wait in line for very long.,4,4
+char_tfidf_lr,"Well, this is where I got my iPad, and I am hooked of all Apple products.  Yes, they are expensive, but they are so cool.  I am amazed to see little kids playing with the iPads and computers, I am sure they are a lot more tech savvy than me.",4,4
+char_tfidf_lr,"I LOVE love LOVE Coffee Bean.  I have been in love with Coffee Bean for years.  I am so bummed out that they are not all over the place like the ""S"" coffee store.  
+
+One of my favie drinks are the Pure Cholocate Ice Blended with whip cream and Green Tea Latte.  The service is always friendly, perky, and fully of sunshine.",5,4
+char_tfidf_lr,Wasn't impressed. Dressing tasted like a store bought bottle dressing and tomatoes very very mushy.,2,4
+char_tfidf_lr,"Another great Italian find!
+
+My BF and I went to Roma Garden for dinner last night because he was given a gift certificate there from a friend.  We'd never heard of it, but we're always up for trying something new, especially with $50 towards our meal.  We pulled up to their strip mall location without expectations and we were both pleasantly surprised!
+
+When you walk in, the lighting and decor are welcoming and the staff is friendly and attentive.  It was a Thursday night and there were plenty of other guests in the restaurant, and there was a lively energy in the air.  After browsing the menu, I ordered one of the few 'Chef's Specials' of the night - tilapia with fresh veggies and pasta in a lemon caper sauce.  BF went with Pollo Parmagiana.  He had a glass of cabernet and I had pinot grigio... and voila - a warm bread basket arrived on our table at just the right time!
+
+We were both happy with our orders when they arrived as well... the fish was cooked just right and the sauce was tasty... good portions as well!  Although we were full, we decided to order a dessert to share - the homemade snow white chocolate tartufo - yum!  The perfect sweet ending to our meal.  In addition, we were each brought an after dinner drink of amaretto on the rocks, on the house.
+
+****I just have to share that I was pleasantly surprised that the women's restroom was clean, spacious, and had a fresh fragrance to it - I normally don't notice that, but I was impressed by this!
+
+In speaking to the waiter and the owner, we learned that this restaurant recently changed locations but they've been in business for over 15 years.  Gotta love the local businesses that last in the valley... we'll be back to support Roma Garden and enjoy their fine ""Northern Italian Cuisine"" without a doubt.  I suggest you go check it out also - bon appetito!",5,4
+char_tfidf_lr,"the food here is deeee-licious. i like the decor, the ambiance, the menu, the waitstaff. however, i hate the feeling that i'm being some trendy little scottsdale frou-frou by eating here.
+
+the salads are totally inventive and yummy, but a little on the sweet side. i loooooooooooove that you can add an egg (genius!!!) and fresh garlic to your pizza. i adore the fresh and homemade ingredients, and i really like the cute little neighborhood-eatery feel. eating here makes me feel as if i'm in a bigger city than phx. 
+
+LGO is on the pricey side, and definitely caters to those who want to eat gourmet/designer pizza. however, taste wins out with all the fantastic and fresh toppings. and if you ever get sick of franchise restaurants a la CPK, LGO is a great alternative.",3,4
+char_tfidf_lr,"The waiter got the drink wrong: ""up"" means served strained without ice, not on the rocks, but I was happy about the mistake, The Salmon melted in my mouth and the bread pudding made me fat for hours, but was so worth it.  Great atmosphere and none of our plates were empty when taken away.  I would definitely go back.  Good service, great food, fun atmosphere.  Great flexible hours on a Sunday.  GO !",5,4
+char_tfidf_lr,"01/04/2012
+
+I thank Yelp and ATC for giving me the great opportunity to experience a terrific performance of ""Daddy Long Legs,"" ATC's first musical production, at The Herberger Theater tonight!  The two-actor (Megan McGinnis and Robert Adelman Hancock) musical, plus the invisible, but great assets, the orchestra and sound crew, entertained and amazed me w/ their execution of a well-written body of work.  It had comedy, romance, deception, and sorrow, to name a few... what's not to like?  Truly enjoyed McGinnis' impeccable timing, as well.  It is sad that many people pass up the opportunity to watch live theater due to the higher ticket fees, and I cannot fault them-- what's easier to bear: $37 per person plus $3 parking fee, which you may buy at the box office prior to attending the show, or $10 and free parking at the movies (well, at least when you're NOT catching one in downtown PHX)?  However, when you do decide to place the financial investment, you will almost always be rewarded w/ a highly-memorable night, believe you me!  
+
+I had a wonderful time, and I would definitely recommend ""Daddy Long Legs"" to anyone who enjoys great acting and music!  (Much thanks to McGinnis and Hancock for their lovely harmonies-- I cherished them!)",5,4
+char_tfidf_lr,"While I'm a sushi fan, my husband is a sushi FIEND - we made biweekly trips to his favorite haunt in NYC (Monster Sushi) and if he was on his own for dinner, I could always count on him to be there for a bite.  After relocating to Phoenix, he'd been jonesing hardcore for non-commercial, non-fussy sushi in epic proportions served with a smile.  Our trusted source told us that Kyoto was their favorite and we had to indulge.  The mixed views on Yelp made be a tad nervous, but I like to give places an unbiased chance.  Very glad that I did.
+
+The interior of the place is a little strange given the shape of the restaurant and lack of windows, but we made ourselves cozy in a table next to the sushi bar.  I also did not notice a pre-club atmosphere - it was chill the night we went, but maybe it was because we went after work (which is probably on the earlier side for the see and be seens).
+
+No teppan for us that night - it was all about the sushi.  We started with a pleasantly savory miso soup, flavorful seaweed salad and moist, tender tako (octopus) salad.  Next was my favorite dish of the night (and no, not traditional for sushi, but whatever) - a peppered, seared tuna with onion sauce.  Divine!  I could have had three plates of this and called it a day.  Most of the folks in our party ordered rather classic rolls, while I ordered an additional three specialty rolls (Candy Cane, Ichi and Shrimp Tempura - I love to crunch it out).  The rolls were so HUGE we struggled to eat it all.  Keep in mind that those specialty rolls are massive, particularly the Ichi (should have been called Ichi the Killer Roll) which you could barely eat with chopsticks.  I was a mess of dungeoness crab and spicy tuna by the end of the night, but I was happy.
+
+Price was absolutely fair for the quality of the food - there are many (MANY) overprices sushi places in Scottsdale and many dirt cheap places in the valley.  This one charges fairly and keeps the quality up.  I don't ever mind paying if it's worth it.
+
+Will most definitely come back and hopefully take in some teppan next time :)",4,4
+char_tfidf_lr,Went here while on vacation in Phoneix based on seeing it on Man vs Food. Could not have been more impressed. Food was amazing. Far above expectations.  The torta was huge and delicious. Would highly recommend it to anyone looking for a fantastic authentic meal at a good price!,5,4
+char_tfidf_lr,"Their beef gyro's are delicious!  Great portions for what you pay.  And their falafel is really good too.  Not a great portion it seems for an order of hummus, we got like one piece of pita.  Just didn't seem to be much there.  We always do carryout, and either the bartender is really nice and funny, or just werent very friendly.",3,4
+char_tfidf_lr,"Great place to see a show.  Prices are the best around, and it's never too crowded.",4,5
+char_tfidf_lr,"The Hyatt Place Scottsdale is a hidden jewel in old town, just off the main drag this place is perfect for a weekend getaway.  They offer complimentary breakfast which is pretty standard but nice and even have ""real"" plates and utensils vs. plastic products.  They also have free WIFI and the rooms are HUGE!  It is a great place to take the family since the kids can stay in the first part of the room on the sofa sleeper while you can crash on the comfy bed closer to the TV.
+The only reason I give 4 stars vs. a perfect 5 is because the pool is really small and not that great.  If they upgraded the pool a bit they would be golden.",4,4
+char_tfidf_lr,"I didn't pay much attention to this place for several years.  Passed it many times, just didn't catch my eye enough for me to remember it on those nights when I desperately try to think of some new place to try.
+
+I've since been here twice (over about a 3 month time span), and I really love it.  First time, had great food (all server recommendations - although he disappeared prior to arrival of meal, seemed to be doing side work so he could bolt out).  Great although somewhat minimal service for the second half of our dinner, former waiter did not say he was leaving, we sat for a little while before someone new arrived.  Ambiance and company made it barely noticeable.   Personally, I don't care as long as I get good service.  We're not family, I don't need an apology or heartfelt goodbye.  The garlic app - what it is called? - your server will know, it's probably their most popular dish, it is AMAZING.  Order this unless you hate garlic or are on a diet.  I consider myself a good cook, but I would leave this up to Richardsons.  As I write this I realize the whole reason for my review is that dish, because I don't remember anything else I had.  Stopped by for drinks the second time, ended up ordering a pizza, expected little since it didn't mesh with the menu, it was really quite good.  Bartender was great (I think he was actually the take-over waiter from my previous visit).  Very cozy place, if you come later or are are willing to wait, you can get a private table in a cave like nook.  The place is not cheap, comparative to other finer dining establishments.  Overall, a lively but romantic place with character, good food, and decent service.",4,4
+char_tfidf_lr,"In spite of being on the corner of 44th and Camelback it does a good job of insulating you from the traffic and taking you some place else, in this case our dear Communist neighbors to the South.  I like the sampler because it allows you to enjoy the finest island interpretations of pork, beef, and chicken.  Also, no meal is complete without going bananas for the ....well, tostones.
+
+You gotta hand it to those Castro brothers.  They forcefully preside over a country that has a pretty great national cuisine.  Viva La Revolucion!",4,4
+char_tfidf_lr,"I've eaten here many times, but none as bad as last night.
+Service was excellent, and highly attentive.
+Food, absolutely horrible.
+
+My expectation was they would serve a steak on par with their seafood. After all, they were charging 39 bucks for a ribeye. 
+What I was hoping for was a 1- 1-1/2' thick steak, cooked Pittsburgh style as I had ordered. 
+What I got a a 3/4 in thick piece of meat that was mostly fat, gristle, and in no way resembled Pittsburgh Style. 
+Salad, similar to something you could get at Chick Filet
+Veggies, blah.
+Bread basket, ample, but day old, and if not, it certainly wasn't fresh. 
+
+In addition to bad food, we were crammed into a small room where we were nuts to butts with 6 other tables, listening to conversations ranging from someone's recent bout with pinkeye, and another couple who elected to speak entirely in French, until the waiter showed up, then it was like they turned off the French switch and suddenly began speaking English. 
+
+I've had it with this place.
+If I'm going to pay 150 bucks for dinner, it'll be at Mortons, or Maestro where the steaks are 1-1/2 in thick, cooked to perfection, and half of it doesnt wind up on the plate as fat and gristle",1,4
+char_tfidf_lr,Another excellent find in Scottsdale.  The service is wonderful and the food is extremely flavorful with good size portions.  The sea scallops and herb chicken are highly recommended.,5,4
+char_tfidf_lr,"The best example North Scottsdale has of traditional Phoenix sonoran mexican food.  Los Olivos restaurants have been around forever - at least since the '60's.  The food is great if not fancy, and the place is pretty free of gimmicks.  You can get your fix of cheese crisps (aka quesadillas for you CA transplants), deep fried tacos, chimichangas, combination plates with so much sauce and cheese you can't tell what's underneath but it all works together to taste so good.  Los Olivos still plops down the free chips and salsa right when you sit down so you're good an full when that combo plate comes and glad for it.  The atmosphere is more like a nice mexican diner than mexican cantina and service is solid. They often have mariachis playing on weekend nights.  Margaritas aren't great, but the beer is cold.  Don't bother with dessert.  Cheap eats for all the food, especially since you won't be hungry for another 24 hours.  If you're in North Scottsdale and in the mood for traditional Phoenix style mexican food, Los Olivos is a great choice.",3,4
+char_tfidf_lr,"So great to see the occasional NY style pizzeria pop up amid all these chi-town ""pizza"" impersonators... Sorry, but if you think pizza is cut in squares, or it's crust should taste like a stale saltine cracker, perhaps this isn't for you.
+
+A great street style joint with friendly staff and always a great selection ready to go, and conveniently located right next to AMC 24. Bring a messenger bag or purse and get some Vincents to go, and avoid the concession stand. Just sayin...",4,4
+char_tfidf_lr,"I had lunch today at CASK 63 with a banker to discuss our collective power to create business in the Phoenix Market. I HAD THE ABSOLUTE BEST CRAB SALAD, I've had since leaving the Gulf Coast of Mississippi. Red Crab Salad....fresh, clean, sweet, crisp..light...in a very well appointed setting. Very  good iced teas as well....hard to find in Phoenix.....Go there...Eat there...you will like it..and we might see one another...who knows...be like nike..just do it...:)",5,5
+char_tfidf_lr,"As a fairly new connoisseur of Greek food, this place is pretty good. I like their pita a lot, and the fire feta is quite addicting.  The salad and rice aren't anything to write home about, and I'm not crazy about the tzaziki sauce here (love it other places)... the street gyros were decent, and the tea that they serve here is delicious when mixed with pink lemonade. I wouldn't go out of my way to come here, but I'll be back when I'm in the 'hood.",3,4
+char_tfidf_lr,"The wood saw is always out of service...
+The garden department is nice, but the staff is a little strange.
+
+This location never seems to be busy, so check out times are short. 
+The prices are higher than ""another"" home improvement store just east on Baseline.
+
+Meh.",2,4
+char_tfidf_lr,"We went over for dinner- had the spring rolls, chicken curry, and lemongrass chicken. The spring rolls and lemongrass chicken were about a 3 star, but the chicken curry was really good and made up for the others. We also had the coconut water, which was fresh. Prices were reasonable we paid around $30.",4,4
+char_tfidf_lr,"Simple but really great cajun food prepared in steamers right in front of you.  Selections include gumbo, pan roasts (a tomato-based broth with chunks of seafood), or seafood creole all with your choice of shrimp, crab, chicken, crawfish, oysters, or all five, with rice. They also have fresh oysters, jumbo shrimp cocktails, salads, and tasty seafood chowder, as well as the occasional lobster special. I've been probably 20 times and still never had a bad dish. The staff is friendly and helpful, and will adjust the spiciness of the dishes to your taste. By far the best option at the Talking Stick resort.
+
+As another reviewer noted, this restaurant is really just a bar with a couple of tables, stuck right off the casino floor. This is definitely not a fine dining spot, with the clanging of slot machines and dead-eyed gamblers shuffling around fifteen feet away. Still, it's definitely worth a visit to Talking Stick. At $10-12 for lunch portions and $17-19 for huge dinner servings, and $25 for a massive platter of oysters, shrimp, crab, mussels, and clams, it's a fantastic value for the quality and tastiness of the food.  Good, reasonably priced seafood can be hard to come by in the valley, but this spot is a gem.",5,4
+char_tfidf_lr,"The sales people here are very knowledgable and helpful. They are also very friendly and great with reccomendations.
+
+I know it is a comic store but I only went there for DnD books/suppliments and ocassional Anime.
+
+I am pretty sure their Anime is bootleged, but due to how cheap it is and the fact that you usually can't find it anywhere else I don't care. They often come in complete sets for like 30 bucks which is great for a whole series. I have had problems watching them on PS2/Xbox sometimes but due to the price I keep coming back. 
+
+Now then if it weren't for this next part they would have a 4 star.
+
+They no longer sell DnD books, or Dice sets which breaks my heart. They always had the best selection when it came to dice and I haven't been able to find another place that carries more than 5-6 at a time.
+
+Out of all the Atomic Comics I have been to I like this one the most, the people there are always fun and inviting I can't stress that enough.",3,4
+char_tfidf_lr,"Drunk people go here. Service is good depending who you get. The Burger according to one Arik B can not taste his burger. When ask the server, how come my friend Arik b can't taste his burger? Why?
+
+You had to be there to laugh. What a fun night!!!!
+
+Don't order the pancakes, they are not very good. The chicken strips were a-ok.",3,4
+char_tfidf_lr,"Some of my friends brought me here last night and the first thing that came into my mind was that this was a set up for To Catch A Predator. I was ready for Chris Hansen to pop out and grill me with, ""What are you doing here?"" If you feel like Kubrick's Lolita really speaks to you, as in it mirrors your life, then you've found a place to feel comfortable in your pervert skin.
+
+If you're of age to consume alcohol, they've got a bar here. The thing about this bar though is that they're really sloppy about pouring drinks, ie. a Manhattan should not taste like a barber's cleaning solution. The decor and set up of this place really needs a face lift.
+
+A few pluses though... If you're under 21, I could see how this would be appealing. I'll admit that the under-21 clubs that I went to when I was under 21 were fun, but now that I think about them they really suck. It seems like an alright experience if this is your first step into the club/bar world. The DJ's here spin pretty much straight hip-hop which is fine, it's very mainstream though and nasty bumping music.
+
+If you go here you're one of three types of people:
+
+1) You were dragged here by your friends
+2) You're under 21
+or, 3) Your usual excuse is a heart-felt plea, complete with waterworks, that goes something along the lines of, ""I swear, Officer, I thought she was 18!!!!""",1,4
+char_tfidf_lr,"This really is more of a lady's hardware store with more design/decorating stuff, small appliances, and such. But this time they had something HD didn't, and at a good price.  Almost exactly what I was looking for, too.
+
+Even if you're a die-hard HD shopper, it doesn't hurt to check here too.",3,4
+char_tfidf_lr,"I'm not a coffee snob, but I love a good Americano.  
+
+This place has the charm you'd expect from a locally owned coffee shop complete with  eclectic decor, artwork on the walls, odds-and-ends of gaudy lamps and stained-glass windows.  The coffee is pretty good from what I have experienced.  The air-conditioning is right where it needs to be as well. 
+
+Most important factor for this business:  very nice staff.  That alone makes me want to come by more often.",4,4
+char_tfidf_lr,Awesome if you like ramen...even awesomer if you like boba tea!!!,4,5
+char_tfidf_lr,"short leash is awesome! we tried the sample platter and they delivered it to us inside the bar. we were also given an additional sample tray to try for free. everything was delicious and had a very unique take on a common american snack. 
+
+I can't wait until they come back!",5,4
+char_tfidf_lr,"While doing a bicycle ride to the Orange Table, I pointed to a friend that LuLus Cupcakes was accessbile from our bike path. She immediately exclaimed- ""we are SO there tomorrow!""
+
+Today, I get a phone call at 4pm, saying she is picking me up to go get those damn cupcakes. She was serious! Since I had off and she got off early, we were able to visit the holy mecca of cupcake land. She picked me up in what may be one of the most ridiculous blue convertables known to man and we zoomed up to Scottsdale, blasting bad hip hop, psyched about individual iced cakes!
+
+Upon arrival, the space was sparse and very IKEA-ish. Pinks and lime greens dominate the palate. To the right of the counter was t-shirts, rubber duckies and other merch. They do have a brown with orange stripes guy shirt...in XL. I guess big men love cupcakes!
+
+But the real star are the cupcakes themselves...lovingly displayed under glass domes. Carrot cakes, german chocolate cake, mocha chocolate cake, blonde (vanilla on vanilla), chocolate on vanilla, and the special of the day key lime....oh man. MERCY. I kept dodging between the carrot and the mocha and went for the Mocha. All natural ingrediants and VEGAN sprinkles! (But very much all dairy icings, btw). Our lady, I think Melissa, was super helpful and even offered samplings of cupcakes to help us decide. She put each individual cupcake in a plastic bubble and in a cute lime green/pink dotted bag. She noted they do have mini cupcakes for events (OMG) and I would totally splurge for those suckers. 
+
+The only real negative (besides times..I mean if this place was open late, it would be HEAVEN) was the lack of drink choices. Coffee, milk or water. Um..I mean, I dont knew a bazillion options, but even tea would have been nice. I chose hot coffee which was fine. But iced coffee as an option would have been kick ass...or lime rickeys! OMG!
+
+As an FYI, you can leave the strip mall complex and head down to the park and eat your delectables under  a shaded tree on a park bench over looking a ""pond"" like we did. I savoured my 2.95 cupcake, and the icing and cake was perfect. I cant even describe how yummy it was. It was worth every cent. And they arent gigantic, so you feel perfectly satisfied with your cupcake.
+
+100% Natural, 100% Naughty is their logo...LOVE IT!",4,4
+char_tfidf_lr,"We use to visit this Pub 10 years ago because they had a nice English waitress and excellent fish and chips for the price.  However, we went back a few weeks ago and boy were we disappointed.  The price of the fish and chip dinner went up and they cut the portion in half.  No one assisted us in putting two tables together, we had to do it ourselves.  Two guests wanted a good English hot tea and they didn't brew it in advance, it was just thrown into a small metal tea pot and we had to ask for cream and sugar.  So we've decided there are newer and better places to eat fish and chips, especially up in north Phoenix.",1,4
+char_tfidf_lr,"Had dinner and brunch, not on the same day...the dinner was good, although I thought the mandala masala could have used more flavor.  Brunch was great, tried 2 different tofu scrambles and both were very good.  Service is...let's say uninterested -- it's hard to be burdened with angst and chipper.",4,4
+char_tfidf_lr,"Great drinks!!!
+
+Good atmosphere
+
+Fantastic food (the bbq chicken pizza is a must)
+
+Nice people to conversate with
+
+What is not to like?
+
+Oh yes, the creepy guy that kept staring at me. Oh well, he will not be there next time I go...I hope :)",4,4
+char_tfidf_lr,"Went here today Sunday about 8:50 and it was crowded but not to bad, about 1/2 hour wait. Im warning you now, dont ask how much longer after you put your name in if they told you how long when you checked in. 
+
+About 10am is when it really got packed, just about when we got done. I ordered the chicken and waffles and i really liked it. I asked for some butter for my waffle because it didnt come with any and it made the dish perfect for me. The chicken had great flavor and when you take a bite with the waffle and butter and the syrup, heaven. I tried some bites without the butter and it wasnt even close to be the same for me. 
+My grandma got some omellete and she gave me some because she knew she wouldnt finish it and i would order that also. The omelletes are pretty good size but my wifes dish, my sons and mine where not that much food especially for $9. We are use to getting enough food for 2 when you eat at breakfast places and slighty cheaper. Not complaining because it was good but be ready. 
+There was 2 guys sitting next to use and trying to eat there 30 minute food challange. big ass egg plate with bacon and hash browns, they both only made thru about halfway.  I would definilty go back and get the same stuff. I also got a lemonade with mint and it was just right. My son really didnt like his reese's pancakes.
+Id like to go back and try some of this stuff ham steak w/ gravy, chicken fried steak w/ hashbrowns, bannana pecan caramel french toast",5,4
+char_tfidf_lr,"There are many other reviews which extol the virtues of this location. I just wanted to add some of my experiences as well as a few observations.
+
+First off, at the time of this writing I've been in Phoenix for about a year. Learning about all the necessary places to go in a new town, I had the opportunity to rate businesses objectively (not like 'My mom always went there so I do too...')
+
+Fry's became a standard 'go to' place. Their hours are great (5 AM to 1 AM). There are many locations, and their prices are very competitive. They also have a convenient VIP card and electronic coupon program.
+
+Specifically to my needs, this location has a good pharmacy, an organic/health selection and a well stocked bakery and deli (for parties and special occasions). Their parking is reasonable and the lot is well kept/secure. There's also a Chase branch nearby as well as a Best Buy, Staples and Old Navy. On Wednesdays there's a Farmer's Market just across the street for everything else I can't find here.
+
+Not all Fry's carry the same things. For instance, I can only depend on this location to carry pita bread, garlic naan, large Fage yogurt as well as the Mexican version of creme fraiche. I appreciate this greatly.
+
+One word of caution, be firm with the staff at the deli. Take a number, insist on their attention, and don't let them gyp you with small wings or the bottom of the pasta selection. I know some of them don't care about their job, but don't let that ruin your experience. Remember: they're probably making minimum wage.
+
+Oh, and the other reviewer's comment about the parking is accurate, although I'm not sure what they can do about it as this is a mall complex.",4,4
+char_tfidf_lr,"Take your money elsewhere, unless you've got kids.  I really try to like this place.  A family member signed me up for the discount card, so I've been going more often, but I just don't love it.  It's simply ok, but the prices are outrageous.  And the sounds and animatronics are a huge distraction from the so-so food.  The cocktails are alright, but, again, the price is not right.  The ony thing fun about the place for an adult is the gift shop and the light-up cocktail glasses (which cost extra.)  I've seen a lot of happy families in here though, so I bet it's better if you have little ones to bring along.",1,4

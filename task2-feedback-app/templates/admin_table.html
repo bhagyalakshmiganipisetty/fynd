@@ -1,0 +1,30 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Rating</th>
+      <th>Review</th>
+      <th>AI Response</th>
+      <th>AI Summary</th>
+      <th>Actions</th>
+      <th>Created</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for s in subs %}
+    <tr>
+      <td>{{ s.id }}</td>
+      <td>{{ s.rating }}</td>
+      <td>{{ s.review }}</td>
+      <td>{{ s.ai_response }}</td>
+      <td>{{ s.ai_summary }}</td>
+      <td><pre style="white-space: pre-wrap;">{{ s.ai_actions }}</pre></td>
+      <td>{{ s.created_at }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<div class="muted" style="margin-top:0.5rem;">
+  Total: {{ total }} | Avg rating: {{ avg_rating }}
+</div>

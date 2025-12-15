@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 1rem; background: #0f172a; color: #e2e8f0; }
+    h1 { margin-bottom: 0.25rem; }
+    .muted { color: #94a3b8; }
+    .cards { display: flex; gap: 1rem; margin: 1rem 0; flex-wrap: wrap; }
+    .card { background: #1e293b; padding: 1rem; border-radius: 8px; flex: 1 1 200px; box-shadow: 0 2px 6px rgba(0,0,0,0.4); }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { padding: 0.5rem; border-bottom: 1px solid #334155; vertical-align: top; }
+    th { text-align: left; color: #cbd5e1; }
+    tr:hover { background: #1f2937; }
+    code { color: #cbd5e1; }
+  </style>
+  <script>
+    async function refreshTable() {
+      const resp = await fetch('/admin/data');
+      const html = await resp.text();
+      document.getElementById('table-container').innerHTML = html;
+    }
+    setInterval(refreshTable, 8000);
+    window.onload = refreshTable;
+  </script>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+  <p class="muted">Live submissions, AI summaries, and recommended actions.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="muted">Total submissions</div>
+      <div style="font-size: 1.5rem;">{{ total }}</div>
+    </div>
+    <div class="card">
+      <div class="muted">Average rating</div>
+      <div style="font-size: 1.5rem;">{{ avg_rating }}</div>
+    </div>
+  </div>
+
+  <div id="table-container">
+    <!-- table content refreshed via /admin/data -->
+  </div>
+</body>
+</html>
