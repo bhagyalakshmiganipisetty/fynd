@@ -9,23 +9,25 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-# env (OpenRouter; falls back to stub if absent)
+# env (OpenRouter; falls back to stub if absent for local only)
 export OPENROUTER_API_KEY=your_key_here
 export OPENROUTER_MODEL=mistralai/mistral-7b-instruct  # choose a valid OpenRouter model ID
 export USE_JSON_FORMAT=true
 export OPENROUTER_REFERRER=https://localhost
 export OPENROUTER_APP=fynd-feedback-app
+# required in production (Vercel): managed Postgres URL, e.g. from Supabase/Neon
+export DATABASE_URL=postgres://USER:PASSWORD@HOST:PORT/DB
 
 uvicorn app.main:app --reload --port 8000
 ```
 Open `http://localhost:8000` for the user dashboard and `http://localhost:8000/admin` for the admin dashboard.
 
-## Deployment (Docker-based, Vercel/Render/Fly)
-- Uses `Dockerfile`. Set envs:\
-  `OPENROUTER_API_KEY` (required), `OPENROUTER_MODEL` (default mistralai/mistral-7b-instruct), `USE_JSON_FORMAT` (true/false), `OPENROUTER_REFERRER`, `OPENROUTER_APP`, `DATABASE_URL` (for managed DB, e.g., Postgres URL).
-- Build/run: `docker build -t feedback-app .` then `docker run -p 8000:8000 --env-file .env feedback-app`
-- On Vercel: choose “Use Dockerfile” and add the env vars above. Use a managed DB (e.g., Supabase Postgres) via `DATABASE_URL`; do not rely on local SQLite in serverless.
-- On Render/Fly: deploy the Docker image or point to this repo; set the same env vars. Persist data via managed DB or volume.
+## Deployment (Vercel serverless)
+- Root directory: `task2-feedback-app`
+- Framework preset: Other; no build/output commands needed
+- Env vars (required): `DATABASE_URL` (managed Postgres URI), `OPENROUTER_API_KEY`
+- Env vars (optional): `OPENROUTER_MODEL` (default mistralai/mistral-7b-instruct), `USE_JSON_FORMAT`, `OPENROUTER_REFERRER`, `OPENROUTER_APP`
+- Vercel will build the Python function from `api/index.py`; all routes rewrite to the FastAPI app.
 
 ## Features
 - User dashboard: rate 1–5, submit review, receive AI response; data persisted.

@@ -25,11 +25,16 @@ OPENROUTER_REFERRER = os.getenv("OPENROUTER_REFERRER", "https://localhost")
 OPENROUTER_APP = os.getenv("OPENROUTER_APP", "fynd-feedback-app")
 USE_JSON_FORMAT = os.getenv("USE_JSON_FORMAT", "true").lower() == "true"
 
-DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{DB_PATH}")
-if DATABASE_URL.startswith("sqlite"):
-    engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
-else:
-    engine = create_engine(DATABASE_URL)
+DATABASE_URL = os.getenv("DATABASE_URL")
+if not DATABASE_URL:
+    raise RuntimeError("DATABASE_URL is not set; configure a managed Postgres URL (no SQLite on Vercel).")
+connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite") else {}
+engine = create_engine(
+    DATABASE_URL,
+    connect_args=connect_args,
+    pool_pre_ping=True,
+    pool_recycle=3600,
+)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 

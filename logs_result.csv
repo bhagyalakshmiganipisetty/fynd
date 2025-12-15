@@ -1,0 +1,1777 @@
+TimeUTC,timestampInMs,requestPath,requestMethod,requestQueryString,responseStatusCode,requestId,requestUserAgent,level,environment,branch,vercelCache,type,function,host,deploymentDomain,deploymentId,durationMs,region,maxMemoryUsed,memorySize,message,projectId,traceId,sessionId,invocationId,instanceId,concurrency
+2025-12-15 21:36:57,1765834617130,fynd-khaki.vercel.app/,GET,,500,cp2qq-1765834613981-b4cb5d37697a,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",error,production,main,MISS,serverless,/,fynd-khaki.vercel.app,fynd-khaki.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:53,1765834613981,fynd-khaki.vercel.app/,GET,,500,cp2qq-1765834613981-b4cb5d37697a,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",,production,main,MISS,serverless,/api/index,fynd-khaki.vercel.app,fynd-khaki.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2381,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ3SYFDJVDPS27NR8MJ40M,,-1
+2025-12-15 21:36:44,1765834604388,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.png,GET,,500,ggmpr-1765834601849-03d4864c3593,vercel-favicon/1.0,error,production,main,MISS,serverless,/favicon.png,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:41,1765834601849,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.png,GET,,500,ggmpr-1765834601849-03d4864c3593,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2479,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ3DD2N63ERM3DS1AZMQT3,,-1
+2025-12-15 21:36:39,1765834599703,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.png,GET,,500,x94cp-1765834597181-2a277c249730,vercel-favicon/1.0,error,production,main,MISS,serverless,/favicon.png,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:37,1765834597181,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.png,GET,,500,x94cp-1765834597181-2a277c249730,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2434,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ38VX7150GVBFC3HR685D,,-1
+2025-12-15 21:36:36,1765834596048,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.png,GET,,500,l9dmn-1765834593530-52a5d1384d44,vercel-favicon/1.0,error,production,main,MISS,serverless,/favicon.png,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:33,1765834593530,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.png,GET,,500,l9dmn-1765834593530-52a5d1384d44,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2463,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ3595T9T50YK0EH3XENV6,,-1
+2025-12-15 21:36:35,1765834595717,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.png,GET,,500,67l6s-1765834593018-08747fdaac09,vercel-favicon/1.0,error,production,main,MISS,serverless,/favicon.png,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:33,1765834593018,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.png,GET,,500,67l6s-1765834593018-08747fdaac09,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2644,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ34S2RJ0957FVBWY8P8TH,,-1
+2025-12-15 21:36:33,1765834593474,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,zhmsj-1765834591031-0db9279396a3,vercel-favicon/1.0,error,production,main,MISS,serverless,/favicon.ico,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:31,1765834591031,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,zhmsj-1765834591031-0db9279396a3,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2382,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ32TY38A63BWZWMQWE9NR,,-1
+2025-12-15 21:36:30,1765834590874,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.png,GET,,500,zvm4g-1765834588389-f6fbbfbb3846,vercel-favicon/1.0,error,production,main,MISS,serverless,/favicon.png,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:28,1765834588389,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.png,GET,,500,zvm4g-1765834588389-f6fbbfbb3846,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2422,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ308HSHFY1ZYREED29CMB,,-1
+2025-12-15 21:36:28,1765834588959,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,bn9zv-1765834586211-b769a40b019e,vercel-favicon/1.0,error,production,main,MISS,serverless,/favicon.ico,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:26,1765834586211,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,bn9zv-1765834586211-b769a40b019e,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2690,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2Y4BXP6H50G075FSGFQE,,-1
+2025-12-15 21:36:27,1765834587257,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.png,GET,,500,zws48-1765834584774-769d46ee6ea0,vercel-favicon/1.0,error,production,main,MISS,serverless,/favicon.png,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:24,1765834584774,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.png,GET,,500,zws48-1765834584774-769d46ee6ea0,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2423,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2WQKJNSGSTEK7EE809A0,,-1
+2025-12-15 21:36:25,1765834585073,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,vz6mp-1765834582355-b1c36feadcf0,vercel-favicon/1.0,error,production,main,MISS,serverless,/favicon.ico,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:22,1765834582355,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,vz6mp-1765834582355-b1c36feadcf0,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2651,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2TC6774148B8N0S05MPZ,,-1
+2025-12-15 21:36:24,1765834584714,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,2dtzm-1765834582276-c7f19bdd8226,vercel-favicon/1.0,error,production,main,MISS,serverless,/favicon.ico,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:22,1765834582276,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,2dtzm-1765834582276-c7f19bdd8226,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2374,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2T9CH1ZZTE58XM4V2Z75,,-1
+2025-12-15 21:36:22,1765834582590,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,b9vb5-1765834579735-ea9bfb92fbe9,vercel-favicon/1.0,error,production,main,MISS,serverless,/,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:19,1765834579735,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,b9vb5-1765834579735-ea9bfb92fbe9,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2786,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2QTA35098P8MMHAQ3BSZ,,-1
+2025-12-15 21:36:20,1765834580163,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,zw2vq-1765834577685-46a6816c5e99,vercel-favicon/1.0,error,production,main,MISS,serverless,/favicon.ico,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:17,1765834577685,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,zw2vq-1765834577685-46a6816c5e99,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2420,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2NSY4MV8R5823AVQCAF0,,-1
+2025-12-15 21:36:19,1765834579069,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,,sn6h6-1765834576283-7ffde5164891,vercel-favicon/1.0,error,production,main,,serverless,,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:16,1765834576283,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,,sn6h6-1765834576283-7ffde5164891,vercel-favicon/1.0,,production,main,,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2727,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2ME4G73RH5GHRY3P61AX,,-1
+2025-12-15 21:36:18,1765834578833,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,s4lkk-1765834576125-dfae10c764d1,vercel-screenshot/1.0,error,production,main,MISS,serverless,/favicon.ico,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:16,1765834576125,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,s4lkk-1765834576125-dfae10c764d1,vercel-screenshot/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2647,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2M970ETDHVHT6PS9CG0A,,-1
+2025-12-15 21:36:17,1765834577726,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,,b8fml-1765834575270-88c951f6e0e6,vercel-screenshot/1.0,error,production,main,,serverless,,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:15,1765834575270,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,,b8fml-1765834575270-88c951f6e0e6,vercel-screenshot/1.0,,production,main,,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2402,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2KEEK13Y60QP8QX6A4XJ,,-1
+2025-12-15 21:36:16,1765834576581,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,zmdk6-1765834573858-ef11a49f483b,vercel-favicon/1.0,error,production,main,MISS,serverless,/favicon.ico,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:13,1765834573858,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/favicon.ico,GET,,500,zmdk6-1765834573858-ef11a49f483b,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2667,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2J2AX5BM97BD3NK9A0HE,,-1
+2025-12-15 21:36:17,1765834577180,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,9xfbt-1765834571283-e562d7d7912d,vercel-favicon/1.0,error,production,main,MISS,serverless,/,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:11,1765834571283,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,9xfbt-1765834571283-e562d7d7912d,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2754,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2FHXWFNZBAKQGXTY5AVY,,-1
+2025-12-15 21:36:16,1765834576030,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,lwwhb-1765834570118-48357d29abf4,vercel-screenshot/1.0,error,production,main,MISS,serverless,/,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:10,1765834570118,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,lwwhb-1765834570118-48357d29abf4,vercel-screenshot/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2700,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2EGRZVZB9E0F529BBER0,,-1
+2025-12-15 21:36:15,1765834575178,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,xv676-1765834569824-8dca230eee52,vercel-screenshot/1.0,error,production,main,MISS,serverless,/,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:09,1765834569824,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,xv676-1765834569824-8dca230eee52,vercel-screenshot/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2433,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2E4A7G4T2Y71GHFAZE31,,-1
+2025-12-15 21:36:13,1765834573529,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,7h662-1765834567789-cc9cf0ebd424,vercel-favicon/1.0,error,production,main,MISS,serverless,/,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:07,1765834567789,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,7h662-1765834567789-cc9cf0ebd424,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2516,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2C83M3G4940T6WR6VV3E,,-1
+2025-12-15 21:36:13,1765834573911,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,kb8x6-1765834567787-cf1c24910a7c,vercel-favicon/1.0,error,production,main,MISS,serverless,/,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:07,1765834567787,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,kb8x6-1765834567787-cf1c24910a7c,vercel-favicon/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2817,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2C7NP4BF0PFJTE47EZH4,,-1
+2025-12-15 21:36:12,1765834572245,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,,sn6h6-1765834566028-71301abf2ee0,vercel-screenshot/1.0,error,production,main,,serverless,,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:06,1765834566028,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,,sn6h6-1765834566028-71301abf2ee0,vercel-screenshot/1.0,,production,main,,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2841,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2AGZ81VVC973ZE7FE994,,-1
+2025-12-15 21:36:12,1765834572220,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,t4csn-1765834565773-02a1ff5f5247,vercel-screenshot/1.0,error,production,main,MISS,serverless,/,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,,,,,""", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 10, in <module>
+from app.main import app  # noqa: E402
+^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/app/main.py"", line 49, in <module>
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5868, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3252, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3242, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3278, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 148, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2442, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 146, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3302, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 449, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1263, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 712, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 179, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 390, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 674, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 900, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 146, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 896, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 643, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 621, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/psycopg2/__init__.py"", line 122, in connect
+conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name ""neetu@db.tsmltaouljjsghbiaerw.supabase.co"" to address: System error
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,,,
+2025-12-15 21:36:05,1765834565773,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app/,GET,,500,t4csn-1765834565773-02a1ff5f5247,vercel-screenshot/1.0,,production,main,MISS,serverless,/api/index,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,fynd-4o9hep5i7-bhagyas-projects-1fce0590.vercel.app,dpl_BfB9a6i3UpZA6Pm4pVPnqyMWxBS2,2861,iad1,-1,2048,,prj_0sOiRgYIEyEit18sKaQpb92tSL0C,,,01KCHZ2AFNX8G7911EX77S14MB,,-1
